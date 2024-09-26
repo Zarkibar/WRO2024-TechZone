@@ -17,7 +17,7 @@ class PID
         {
             this->kp = kp;
             this->ki = ki;
-            this->kd = kd;
+            this->kd = kp;
             this->max_output = max_output;
             this->min_output = min_output;
         }
@@ -35,7 +35,7 @@ class PID
 
             previous_error = error;
 
-            float output = P + D + I;
+            float output = P + I + D;
 
             if (output > max_output)
                 output = max_output;
