@@ -31,3 +31,6 @@ This file contains the mechanism of PID Controller for the car to keep in track.
 
 ## main.ino
 This is the main file that contains all the code of first and second round.
+
+At first the car calculates the distances of walls with two sonars on both side. Then it sends the error to the PID class and calculates it's angle with it. 
+![Hyello](./readme_photos/2.png)
