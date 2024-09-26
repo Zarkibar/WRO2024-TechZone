@@ -1,8 +1,6 @@
 #include <Servo.h>
 #include <Wire.h>
 #include <MPU6050_light.h>
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
 #include "HUSKYLENS.h"
 #include "Car_PID.h"
 
