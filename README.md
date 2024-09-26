@@ -40,4 +40,8 @@ In every 0.1 seconds it will send the `error (distance_2 - distance_1)` to the P
 
 ![Steering_2](./readme_photos/3.png)
 
-There is another variable here named `objValue` that basically helps for obstacle avoidance.
+There is another variable here named `objValue` that basically helps for obstacle avoidance. `objValue` will differ based on the obstacle husky lens sees. So the final output of PID will go slightly left or right based on the obstacle.
+
+[Camera](./readme_photos/1.png)
+
+This is the code where we change `objValue` based on the obstacle's color. We can estimate a distance of the obstacle with a constant divided by it's width. This part finds the minimum distance of the available obstacles, thus it changes it's path based on the closest one.
