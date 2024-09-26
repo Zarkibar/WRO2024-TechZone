@@ -33,7 +33,11 @@ This file contains the mechanism of PID Controller for the car to keep in track.
 This is the main file that contains all the code of first and second round.
 
 At first the car calculates the distances of walls with two sonars on both side. Then it sends the error to the PID class and calculates it's angle with it. 
+
 ![Steering_1](./readme_photos/2.png)
+
 In every 0.1 seconds it will send the `error (distance_2 - distance_1)` to the PID class. So it will try to maintain a fixed path in the center of the track.
+
 ![Steering_2](./readme_photos/3.png)
+
 There is another variable here named `objValue` that basically helps for obstacle avoidance.
