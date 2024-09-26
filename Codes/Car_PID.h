@@ -17,7 +17,7 @@ class PID
         {
             this->kp = kp;
             this->ki = ki;
-            this->kd = kp;
+            this->kd = kd;
             this->max_output = max_output;
             this->min_output = min_output;
         }
