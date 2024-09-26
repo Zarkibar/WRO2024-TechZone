@@ -12,6 +12,7 @@ There are two files named `main.ino` and `Car_PID.h`
 - 2x3.7 volt = 7.4 volt battery pack
 - dc to dc buck converter (XL6009R1)
 - l298n Motor Driver
+- 4 wheels of diameter 4 cm
 
 # First Round
 - Sonar Sensors are used for calculating it's distance from the walls.
